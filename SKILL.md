@@ -1,9 +1,9 @@
 ---
-name: directing-hyperframes-ads
-description: Direct and produce polished marketing videos, product launch ads, YouTube promos, Apple-style reveal films, kinetic typography sequences, social ads, caption-led product videos, website-to-video explainers, and music-synced motion graphics using HyperFrames. Use this skill whenever the user wants a high-quality video or ad, especially requests involving HyperFrames, HTML/CSS/GSAP video, big animated typography, product promos, launch films, music beat sync, transitions, short-form ads, or turning a landing page/product story into a rendered video. This skill guides creative brief, design system, script, storyboard, hero frames, GSAP motion choreography, validation, snapshots, review loops, and final deterministic renders.
+name: video-ad-director
+description: Direct and produce polished marketing videos, product launch ads, YouTube promos, Apple-style reveal films, kinetic typography sequences, social ads, caption-led product videos, website-to-video explainers, and music-synced motion graphics using HyperFrames. Use this skill whenever the user wants a high-quality AI video ad or promo, especially requests involving HyperFrames, HTML/CSS/GSAP video, big animated typography, product promos, launch films, music beat sync, transitions, short-form ads, or turning a landing page/product story into a rendered video. This skill guides creative brief, design system, script, storyboard, hero frames, GSAP motion choreography, validation, snapshots, review loops, and final deterministic renders.
 ---
 
-# Directing HyperFrames Ads
+# Video Ad Director
 
 Use this skill to behave as an AI video director, motion designer, and production QA lead for HyperFrames advertising work. The goal is not merely to create a composition that renders. The goal is to produce a short video that is clear, visually intentional, rhythmically controlled, editable, technically reproducible, and reviewable by a human.
 

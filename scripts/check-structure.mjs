@@ -30,7 +30,7 @@ const requiredFiles = [
 ];
 
 const requiredSkillTerms = [
-  "name: directing-hyperframes-ads",
+  "name: video-ad-director",
   "description:",
   "Layout Before Animation",
   "Output Fidelity",
@@ -59,4 +59,4 @@ if (missing.length > 0 || missingTerms.length > 0) {
   process.exit(1);
 }
 
-console.log("directing-hyperframes-ads structure check passed.");
+console.log("video-ad-director structure check passed.");

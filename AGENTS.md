@@ -2,14 +2,14 @@
 
 ## Project Structure & Module Organization
 
-This repository is an agent skill for directing HyperFrames advertising work.
+This repository is an agent skill for directing HyperFrames video advertising work.
 
 - `SKILL.md` contains the primary agent instructions and quality gates.
 - `templates/` holds production artifact templates such as `CREATIVE_BRIEF.template.md`, `STORYBOARD.template.md`, and `MOTION_MAP.template.json`.
 - `references/` contains supporting guidance for workflow, typography, motion, audio sync, review loops, and render stability.
 - `scripts/` contains Node.js helpers for scaffolding projects and validating skill structure or production artifacts.
 - `evals/` stores trigger prompts and evaluation cases.
-- `assets/` stores README images only; rendered video outputs belong in generated project folders, not here.
+- `assets/` stores compressed README images only; rendered video outputs belong in generated project folders, not here.
 
 ## Build, Test, and Development Commands
 
@@ -46,7 +46,7 @@ There is no formal test framework yet. Treat `node scripts/check-structure.mjs` 
 
 ## Commit & Pull Request Guidelines
 
-The current history uses Conventional Commit style, for example `docs: initialize directing hyperframes ads skill`. Keep commits terse and scoped: `docs:`, `fix:`, `feat:`, or `chore:`. Pull requests should describe what changed, why it changed, which validation commands ran, and include screenshots only when README visuals or rendered review assets changed.
+The current history uses Conventional Commit style, for example `docs: initialize video ad director skill`. Keep commits terse and scoped: `docs:`, `fix:`, `feat:`, or `chore:`. Pull requests should describe what changed, why it changed, which validation commands ran, and include screenshots only when README visuals or rendered review assets changed.
 
 ## Agent-Specific Instructions
 

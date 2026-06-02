@@ -52,7 +52,7 @@ const readmePath = join(target, "README.md");
 if (!existsSync(readmePath) || force) {
   writeFileSync(readmePath, `# HyperFrames Ad Production
 
-This project was scaffolded by the directing-hyperframes-ads skill.
+This project was scaffolded by the video-ad-director skill.
 
 ## Artifact Flow
 

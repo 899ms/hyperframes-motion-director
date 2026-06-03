@@ -13,12 +13,13 @@
 - Why this structure:
 
 ## Format
-- Platform:
-- Aspect ratio:
-- Pixel size:
-- Duration:
-- FPS:
-- Safe margins:
+- Language: Simplified Chinese promotional copy by default
+- Platform: vertical social video by default
+- Aspect ratio: 9:16 by default
+- Pixel size: 1080x1920 by default
+- Duration: 10-15s by default
+- FPS: 30 or 60
+- Safe margins: vertical platform-safe top/bottom zones; keep CTA clear of bottom overlays
 - Crop / overlay risks:
 
 ## Visual Direction
@@ -49,16 +50,18 @@
 - Forbidden image content:
 
 ## Typography And Layout
+- Copy language: Simplified Chinese unless explicitly overridden
 - Title scale:
 - Support text scale:
 - CTA / brand scale:
 - Max title lines:
 - Max support lines:
+- Chinese line-break plan:
 - Line height:
 - Letter spacing:
 - Max text width:
 - Overflow handling:
-- Mobile crop handling:
+- Vertical crop handling:
 - Text-over-image contrast treatment:
 
 ## Motion Plan

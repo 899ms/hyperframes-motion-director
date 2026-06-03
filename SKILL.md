@@ -1,6 +1,6 @@
 ---
 name: hyperframes-motion-director
-description: "Direct and produce polished cinematic motion videos, article-to-video films, product launch films, website-to-video pieces, keynote reveals, kinetic typography sequences, and music-synced motion graphics using HyperFrames. Use this skill whenever the user wants a high-quality HyperFrames motion video, especially requests involving HTML/CSS/GSAP video, big animated typography, article/theme-to-video work, product reveals, launch films, music beat sync, transitions, short-form cinematic videos, or turning a landing page/product story into a rendered video. This skill enforces a strict two-phase workflow: first a brief/design proposal for user confirmation, then a cinematic metaphor production with design spec, storyboard, optional image generation, optional timing/motion maps, validation, snapshots, review report, and deterministic renders."
+description: "Direct and produce polished Chinese-first cinematic promo films and motion videos using HyperFrames, defaulting to vertical 9:16 1080x1920 unless the user or platform clearly requires another format. Use this skill whenever the user wants a high-quality HyperFrames motion video, especially Chinese promotional films, article-to-video films, product launch films, website-to-video pieces, keynote reveals, kinetic typography sequences, music-synced motion graphics, HTML/CSS/GSAP video, big animated typography, product reveals, launch films, short-form vertical videos, or turning a landing page/product story into a rendered video. This skill enforces a strict two-phase workflow: first a brief/design proposal for user confirmation, then a cinematic metaphor production with design spec, storyboard, optional image generation, optional timing/motion maps, validation, snapshots, review report, and deterministic renders."
 ---
 
 # HyperFrames Motion Director
@@ -52,6 +52,20 @@ Treat each frame as three coordinated layers:
 
 Use `references/motion-background-system.md` for image counts, text-over-image layout, motion grammar, and review gates.
 
+## Default Language And Format
+
+Default new video work to a Chinese promotional film unless the user explicitly asks for another language or format. This default matters because Chinese copy, vertical framing, and social-video viewing habits change the whole layout:
+
+- Language: Simplified Chinese screen copy by default. Keep English product names, model names, code terms, or brand words only when they are part of the source material.
+- Format: vertical 9:16 by default.
+- Size: `1080x1920` by default.
+- Platform assumption: Douyin / TikTok / Reels / Shorts style vertical viewing unless the prompt clearly names a horizontal surface such as YouTube long-form, keynote screen, website hero, or desktop landing page.
+- Duration: 10-15 seconds by default for short promotional motion video; use 15 seconds when proof or CTA needs breathing room.
+- Safe margins: reserve stronger top/bottom margins for platform UI, subtitles, and CTA. Avoid placing important text in the bottom overlay zone.
+- Copy density: Chinese vertical video should use fewer characters per beat, stronger line breaks, and larger type than a horizontal desktop film.
+
+If a user asks for a YouTube, website hero, keynote, or widescreen film, change the format deliberately and write the reason into the brief. Do not silently drift to horizontal because examples or tools default that way.
+
 ## Two-Phase Rule
 
 Always split new video work into two phases:
@@ -64,7 +78,7 @@ The proposal must include:
 
 - Essence: core viewpoint, largest conflict, emotional center, amplified keyword, visual metaphor.
 - Structure: center symbol / huge title / person anchor / huge number.
-- Format: platform, aspect ratio, pixel size, duration, FPS, safe margins.
+- Format: language, platform, aspect ratio, pixel size, duration, FPS, safe margins. Default to Simplified Chinese, vertical 9:16, and `1080x1920` unless overridden.
 - Image decision: whether generated bitmap images are needed, what each image should be, and what must stay in HyperFrames.
 - Background plan: image role, subject position, quiet text zone, crop risks, and whether Codex Image Gen will be used after confirmation.
 - Typography: title/support/CTA scale, line-height, letter-spacing, maximum lines, overflow handling.
@@ -136,7 +150,8 @@ Extract or infer:
 - Source article, topic, or product theme.
 - Goal and CTA.
 - Audience.
-- Platform and aspect ratio.
+- Language and platform. Default to Simplified Chinese promotional copy for vertical social video when unspecified.
+- Aspect ratio and pixel size. Default to 9:16 and `1080x1920` unless the platform or user asks otherwise.
 - Duration.
 - Product or offer.
 - Required proof points.
@@ -324,6 +339,7 @@ Create `REVIEW_PACK.md` with `scripts/build_review_pack.mjs <project-dir>` when 
 
 Before claiming the video is ready:
 
+- New video defaults are honored or explicitly overridden: Simplified Chinese promotional copy, 9:16, `1080x1920`, and vertical safe margins.
 - New video work received user confirmation after `BRIEF_DESIGN_PROPOSAL.md` before production began.
 - The artifact chain exists or the skipped artifacts are explained.
 - If the task asked to build a video, a scaffold or composition source exists, not only prose.
@@ -357,7 +373,7 @@ Do not use:
 - Manual `video.play()`, `video.pause()`, or uncontrolled media time changes.
 - Infinite animation repeats in a render timeline.
 
-Use seeded randomness, fixed duration, fixed fps, fixed dimensions, local assets, and explicit timeline positions.
+Use seeded randomness, fixed duration, fixed fps, fixed dimensions, local assets, and explicit timeline positions. Default new-video dimensions are `1080x1920` for 9:16 vertical output unless the brief documents another target.
 
 ## References
 

@@ -51,11 +51,15 @@ Required snapshots: first frame, each hero frame, each transition midpoint, CTA 
 | Delivery readiness / 2 |  |  |
 
 ## Style Gate
+- Default language is Simplified Chinese or override is documented:
+- Default 9:16 1080x1920 vertical format or override is documented:
+- Vertical platform safe zones are respected:
 - Essence metaphor is clear:
 - Surface-topic illustration avoided:
 - Background image or pure-code exception is verified:
 - Background role supports meaning rather than decoration:
 - Text sits in a safe quiet zone:
+- Chinese copy has readable line breaks and low density:
 - Black / white / gray / warm gold only:
 - One dominant symbol or title per frame:
 - Motion has a clear attention target:

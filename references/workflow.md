@@ -2,7 +2,7 @@
 
 This workflow turns a vague motion-video request into a reviewable HyperFrames production. Follow it in order for new videos. For edits, change only the affected stage.
 
-The default creative direction is a black-background cinematic metaphor film. Do not draw the surface topic. Extract the essence of the article, theme, product, or argument, then build a restrained symbol that carries the point.
+The default creative direction is a Chinese-first vertical promotional film with black-background cinematic metaphor. Do not draw the surface topic. Extract the essence of the article, theme, product, or argument, then build a restrained symbol that carries the point.
 
 New videos need a background stage by default. It can be generated, supplied, or pure code, but any exception must be written in the brief. The background is not decoration; it creates space, carries metaphor, protects text readability, or grounds the product.
 
@@ -15,9 +15,10 @@ Capture the minimum viable production brief:
 - Source article, theme, or product idea.
 - Goal: what should the viewer do after watching?
 - Audience: who is this for?
-- Platform: YouTube, Shorts, LinkedIn, landing page hero, paid ad, internal demo.
-- Aspect ratio and resolution: default to 16:9 1920x1080 unless the platform implies otherwise.
-- Duration: default to 10-15 seconds for cinematic motion video or kinetic typography.
+- Language: default to Simplified Chinese promotional copy unless the user explicitly asks for another language.
+- Platform: default to vertical social video, such as Douyin / TikTok / Reels / Shorts, unless the prompt names a different surface.
+- Aspect ratio and resolution: default to 9:16 1080x1920. Use 16:9 or other sizes only when the user, platform, or delivery surface clearly requires it.
+- Duration: default to 10-15 seconds for cinematic promotional motion video or kinetic typography.
 - Product or offer: what is being promoted?
 - Proof: what can be truthfully claimed?
 - Style: default to black cinematic metaphor unless the user explicitly overrides it.
@@ -55,7 +56,7 @@ Before any implementation, produce `BRIEF_DESIGN_PROPOSAL.md` or the equivalent 
 
 - Essence and metaphor.
 - Structure choice.
-- Platform, aspect ratio, pixel size, duration, FPS, safe margins.
+- Language, platform, aspect ratio, pixel size, duration, FPS, safe margins.
 - Image generation decision, including default background image role or the explicit reason it is not needed.
 - Typography, layout, overflow handling, and mobile crop handling.
 - Motion plan and risk gates.
@@ -130,8 +131,8 @@ If the metaphor needs generated bitmap source material, plan images before imple
 - Center symbol.
 - Background texture or atmosphere.
 - Optional person/object anchor.
-- Any vertical key visual for 9:16 work.
-- Any horizontal key visual for 16:9 work.
+- Default vertical key visual for 9:16 work.
+- Horizontal key visual only when the brief documents a 16:9 target.
 
 Generated images should be sparse. Avoid baked-in text unless exact text is required. Compose final titles, captions, masks, crops, parallax, focus pulls, and timing in HyperFrames.
 
@@ -168,11 +169,13 @@ Build static scene layouts before animation.
 Check:
 
 - Copy is legible.
+- Chinese copy uses deliberate line breaks, large type, and low character count per beat.
 - Visual hierarchy is obvious.
 - Background image has one clear role and is not generic wallpaper.
 - Text is placed on a planned quiet zone, not over high-frequency details.
 - Local contrast treatment is present where text crosses imagery.
 - Safe margins hold.
+- Vertical platform overlay zones are respected, especially bottom UI / CTA collision risk.
 - Text has max width, max lines, explicit overflow behavior, and stable breakpoints.
 - Long words, mixed Chinese/English copy, CTA labels, and subtitles do not escape their containers.
 - The composition does not depend on motion to make sense.

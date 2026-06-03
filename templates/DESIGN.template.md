@@ -23,13 +23,16 @@
 - Body font: quiet neutral sans.
 - Number / technical font: only if the structure uses a huge number or data shock.
 - Type scale: one huge title, one quiet support line, one CTA/brand lockup.
+- Copy language: Simplified Chinese promotional copy by default; preserve English brand/product terms only when useful.
+- Chinese copy rules: low character count per beat, deliberate line breaks, large type, and no dense subtitle blocks.
 - Font weight policy: avoid too many weights; title must dominate.
 - Line height: tight but not colliding for display text; comfortable for support text.
 - Letter spacing: default `0`; use tracking only for small all-caps labels.
 
 ## Layout
-- Aspect ratio:
-- Safe margins:
+- Aspect ratio: 9:16 by default
+- Pixel size: 1080x1920 by default
+- Safe margins: protect top/bottom platform UI zones; keep primary copy center-safe
 - Grid / alignment: one dominant symbol or title with large negative space.
 - Density: sparse; every visible element must earn its place.
 - Hero frame rules: must work as a poster without replay; no explanatory icon clusters.
@@ -50,6 +53,7 @@
 - Support placement:
 - CTA placement:
 - Maximum line counts:
+- Chinese line-break plan:
 - Overflow fallback:
 - Mixed Chinese / English fallback:
 - Minimum contrast rule:
@@ -100,4 +104,5 @@
 ## Accessibility / Readability
 - Contrast:
 - Minimum text size:
-- Mobile crop concerns:
+- Vertical crop concerns:
+- Bottom overlay / CTA collision:

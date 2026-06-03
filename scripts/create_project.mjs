@@ -56,6 +56,8 @@ if (!existsSync(readmePath) || force) {
 
 This project was scaffolded by the HyperFrames Motion Director skill.
 
+Default production assumption: Simplified Chinese promotional film, vertical 9:16, 1080x1920, with platform-safe top/bottom zones. Document any override in BRIEF_DESIGN_PROPOSAL.md.
+
 ## Artifact Flow
 
 1. BRIEF_DESIGN_PROPOSAL.md

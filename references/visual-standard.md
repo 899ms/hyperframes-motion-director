@@ -27,13 +27,15 @@ The metaphor must be legible without labels. If the viewer needs icon captions t
 
 ## Typography And Layout
 
+- Default output format is Simplified Chinese vertical promotional video: 9:16, `1080x1920`, with platform-safe top and bottom zones.
 - Use one huge title, one quiet support line, and one CTA/brand lockup.
 - Default maximums: title 1-2 lines, support text 1-2 lines, CTA 1 line, one proof/stat cluster.
+- For Chinese copy, use fewer characters per beat, intentional line breaks, larger type, and stronger contrast than horizontal desktop layouts.
 - Use fixed font sizes per breakpoint. Do not scale font size with viewport width.
 - Default letter spacing is `0`; tracking is allowed only for small all-caps labels.
 - Set max width, max lines, line-height, and overflow behavior for every text block.
 - Long words, mixed Chinese/English copy, subtitles, and CTA labels must not escape their containers.
-- Keep safe margins platform-specific: larger center-safe zones for 9:16, calmer bottom spacing for 16:9.
+- Keep safe margins platform-specific: larger center-safe zones and stronger bottom protection for 9:16, calmer bottom spacing for 16:9.
 - Use no more than two type families unless brand assets require it. Avoid default-looking display typography when the title is the hero.
 
 ## Background Images
@@ -75,6 +77,7 @@ Reject the work if:
 - The background image is interchangeable wallpaper, fights the text, or needs a card to rescue readability.
 - It has more than one dominant message in a frame.
 - Text overlaps, clips, shrinks unpredictably, or falls outside safe margins.
+- The work silently defaults to 16:9, English copy, or desktop-style density when the prompt did not ask for that.
 - The first readable frame appears too late.
 - The metaphor is surface-level or needs labels.
 - All elements move at once, motion repeats the same entrance pattern, or important text never settles.

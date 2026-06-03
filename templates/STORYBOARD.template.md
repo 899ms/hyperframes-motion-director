@@ -1,9 +1,11 @@
 # Storyboard
 
 ## Global Timing
-- Duration:
+- Language: Simplified Chinese promotional copy by default
+- Duration: 10-15s by default
 - FPS:
-- Aspect ratio:
+- Aspect ratio: 9:16 by default
+- Pixel size: 1080x1920 by default
 - Audio source:
 - Beat map:
 - Chosen structure: center symbol / huge title / person anchor / huge number
@@ -13,6 +15,7 @@
 
 - Timing:
 - Screen text / visual:
+- Chinese line break:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
@@ -34,6 +37,7 @@
 
 - Timing:
 - Screen text / visual:
+- Chinese line break:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
@@ -55,6 +59,7 @@
 
 - Timing:
 - Screen text / visual:
+- Chinese line break:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
@@ -76,6 +81,7 @@
 
 - Timing:
 - Screen text / visual:
+- Chinese line break:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:

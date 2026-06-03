@@ -2,10 +2,14 @@
 
 # HyperFrames Motion Director
 
-**面向 HyperFrames 的电影感动效视频制作工作流**
+**面向 HyperFrames 的中文竖版电影感动效视频制作工作流。**
+
+默认按 9:16、1080x1920、中文宣传片来规划，把文章、产品和官网故事导演成有画面、有节奏、可验证的动效视频。
+
+<img src="assets/banner.png" alt="HyperFrames Motion Director cinematic motion workflow" width="100%">
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
-[![Skill](https://img.shields.io/badge/Agent%20Skill-HyperFrames-c96442.svg)](./SKILL.md)
+[![Agent Skill](https://img.shields.io/badge/Agent%20Skill-HyperFrames-c96442.svg)](./SKILL.md)
 [![Node.js](https://img.shields.io/badge/Node.js-18%2B-141413.svg)](https://nodejs.org/)
 
 </div>
@@ -14,152 +18,119 @@
 
 ## 这是什么
 
-HyperFrames Motion Director 是一个用于制作 HyperFrames 动效视频和电影感短片的 agent skill。它把文章、主题、产品、官网或发布信息，先转成可确认的 brief/design 方案；用户确认后，才进入背景图/主视觉生成、HyperFrames 制作、验证、快照、渲染和审查报告。
+HyperFrames Motion Director 是一个面向 HyperFrames 的动效视频导演 skill。它默认把新任务当作中文竖版宣传片来处理：9:16、1080x1920、中文屏幕文案、竖屏安全区和短视频观看节奏。
+
+它不会直接冲进动画代码，而是先把输入材料转成可确认的方向：核心观点、视觉隐喻、背景图计划、图文排版、运动节奏和验证标准。
+
+确认之后，它再进入制作：生成必要图片，补齐设计、分镜和检查文档，协助完成 HyperFrames composition，并用快照、资源检查和审查报告把交付质量锁住。
+
+适合做产品发布片、官网转视频、文章转短片、观点视频、动效字体片、节拍同步 motion graphics，以及需要明确 CTA 的宣传短片。
+
+## 为什么需要它
+
+很多 AI 视频看起来廉价，不是因为动画不够多，而是因为一开始没有导演判断：画面没有舞台，文字没有安全区，动画没有注意力目标，背景图和文案各说各话。
+
+这个 skill 把视频先当成一组能站住的关键帧，再考虑运动。它默认要求背景图负责空间和隐喻，中文大字负责清晰表达，动画负责引导视线。
+
+## 你会得到什么
+
+<img src="assets/features.png" alt="Background, typography, and motion layers working together" width="100%">
+
+- **可确认的方向**：先给 brief/design 方案，确认后再制作，避免一上来就生成错误素材。
+- **默认中文竖版**：新视频默认按 9:16、1080x1920、中文宣传片、安全区和短视频节奏规划。
+- **电影感视觉系统**：默认黑底、低亮度、高对比、大留白、白/灰/暖金三色，拒绝廉价科技感和信息堆叠。
+- **完整交付链路**：背景图、设计规范、分镜、可选节拍图、可选运动图、资源检查、快照、渲染和审查报告。
+
+## 工作方式
 
 ```text
-输入："把这篇关于 AI 替代焦虑的文章做成 12 秒宣传片，不要画机器人办公室，要画本质隐喻"
-输出：先给一份可确认的黑底极简电影风 brief/design 方案；确认后再生成设计规范、分镜、必要图片、HyperFrames composition 和审查报告
+输入材料
+  -> 提炼核心观点和视觉隐喻
+  -> 生成可确认的 brief/design 方案
+  -> 确认后生成图片、设计文档和分镜
+  -> 制作 HyperFrames composition
+  -> 检查资源、快照、渲染和审查报告
 ```
 
-它适用于产品发布片、官网转视频、文章转视频、观点短片、字幕驱动产品视频、动效字体短片、音乐节拍同步 motion graphics，以及需要清晰 CTA 的宣传视频。
+核心原则：先让静态关键帧成立，再让动画为观看路径服务。
 
-默认风格是严格的黑底电影隐喻风：`#050505` 极深黑背景，白/灰/暖金三色，高对比，大留白，电影打光，纸张颗粒，浅景深，体积雾，细窄轮廓光，局部金属质感。它不做普通插画、电商 Banner、图标堆、廉价科技感、多色渐变或解释性信息图。
+## 快速开始
 
----
-
-## 核心能力
-
-这个 skill 强调先确认方向，再制作视频；默认先规划背景图舞台，再做静态关键帧，再做动画；先验证排版、安全边界、时间线和渲染稳定性，再交付成片。
-
-核心能力：
-
-- 提炼文章或主题的核心观点、最大冲突、情绪重心、关键词和视觉隐喻。
-- 将抽象观点转译为克制符号，例如被擦除的人影、即将断裂的细线、黑暗倒计时、裂缝里的微光、被吸入黑洞的数据碎片。
-- 自动选择中心符号、超大标题、人物锚点或巨大数字作为主结构。
-- 判断是否需要生成图片；需要时先生成视觉素材，再用 HyperFrames 负责字体、构图、动效、节奏和最终渲染。
-- 把背景图、文字和动画绑定在一起：背景图负责舞台和隐喻，文字负责清晰信息，动画负责引导视线。
-
----
-
-## 工作流程
-
-工作方式是从最终观看体验倒推：观众要记住什么，文章的本质隐喻是什么，视频尺寸和文字布局是否成立，哪些图片需要生成，哪些元素必须留给 HyperFrames 排版和动画，哪些验证能证明画面不溢出、不跑版、可确定渲染。
-
-当前核心规则：新视频默认要有背景舞台；背景图负责空间和隐喻，文字负责清晰信息，动画负责引导视线。
-
----
-
-## 前置依赖
-
-使用前请确认本机具备：
-
-- Node.js 18 或更高版本。
-- 可通过 `npx` 执行 `skills` 和 `hyperframes` CLI。
-- 已安装或可使用 HyperFrames 官方 skill。
+先安装 HyperFrames 官方 skill：
 
 ```bash
 npx skills add heygen-com/hyperframes
 ```
 
----
-
-## 安装 HyperFrames Motion Director
-
-推荐通过 `skills` CLI 安装本 skill：
+再安装 HyperFrames Motion Director：
 
 ```bash
 npx skills add https://github.com/geekjourneyx/hyperframes-motion-director
 ```
 
-使用 skill 本身不需要额外依赖。仓库中的辅助脚本使用 Node.js。
-
----
-
-## 快速开始
-
-### 手动使用 HyperFrames CLI
-
-```bash
-npx hyperframes init my-video
-cd my-video
-npx hyperframes preview
-npx hyperframes render
-```
-
-命令含义：
-
-- `npx hyperframes init my-video`：初始化一个 HyperFrames 视频项目。
-- `npx hyperframes preview`：在浏览器中预览，并支持 live reload。
-- `npx hyperframes render`：渲染输出 MP4。
-
-### 使用本仓库脚手架补齐生产文档
-
-HyperFrames Motion Director 负责把“要做什么视频”拆成可审查的制片文档和验证链路。创建一个生产项目：
+创建一个动效视频制作项目：
 
 ```bash
 node scripts/create_project.mjs ./my-motion-film
 ```
 
-然后按顺序填写生成的文档：
+如果项目需要精确节拍或复杂动画编排：
 
-```text
-BRIEF_DESIGN_PROPOSAL.md
-DESIGN.md
-STORYBOARD.md
-REVIEW_REPORT.md
+```bash
+node scripts/create_project.mjs ./my-motion-film --with-timing --with-motion
 ```
 
-`BEAT_MAP.json` 和 `MOTION_MAP.json` 只在音乐/旁白/复杂 GSAP 时间线需要时生成。
+## 产物结构
 
-发布 skill 或检查项目结构时运行：
+脚手架默认生成四个核心文档：
+
+```text
+BRIEF_DESIGN_PROPOSAL.md  先确认方向
+DESIGN.md                 锁定视觉系统
+STORYBOARD.md             拆分镜头和关键帧
+REVIEW_REPORT.md          记录检查、问题和交付结论
+```
+
+复杂项目可以额外生成：
+
+```text
+BEAT_MAP.json             音乐、旁白或节拍控制
+MOTION_MAP.json           GSAP 编排、转场、视线引导
+```
+
+## 质量检查
+
+发布 skill 前检查结构：
 
 ```bash
 node scripts/check-structure.mjs
+```
+
+检查具体项目的资源和文档质量：
+
+```bash
 node scripts/check_assets.mjs <project-dir>
 node scripts/check_assets.mjs <project-dir> --strict
 node scripts/score_artifacts.mjs <project-dir>
 ```
 
-如果已经实现 HyperFrames composition，继续运行当前项目支持的最强验证命令：
-
-```bash
-npx hyperframes doctor
-npx hyperframes lint
-npx hyperframes validate
-npx hyperframes inspect
-npx hyperframes snapshot <composition> --at <times>
-```
-
----
+已经实现 HyperFrames composition 后，再运行当前项目支持的 HyperFrames 检查和快照命令。
 
 ## 仓库结构
 
 ```text
-SKILL.md                         skill 主指令、确认门和质量门
-templates/                       确认方案、设计、分镜、审查报告和可选节拍/运动图模板
-references/                      工作流、统一视觉标准、音频同步和稳定性指南
-scripts/create_project.mjs       新建 HyperFrames 动效视频项目脚手架
-scripts/check-structure.mjs      skill 发布前结构检查
-scripts/check_assets.mjs         项目资源检查
-scripts/score_artifacts.mjs      本质隐喻、风格门和生产文档评分
-scripts/build_review_pack.mjs    汇总产物、快照、渲染和审查报告
-references/motion-background-system.md  背景图、图文关系和动效预算规则
-evals/                           触发词和评测用例
+SKILL.md             主指令、确认门和质量门
+templates/           brief、design、storyboard、review 和可选 map 模板
+references/          工作流、视觉标准、背景图、音频同步和稳定性指南
+scripts/             脚手架、资源检查、结构检查和评分脚本
+evals/               触发词和评测用例
+assets/              README 视觉资产
 ```
-
----
 
 ## 许可证
 
-[MIT](./LICENSE) — 可自由使用、修改和分发。
+[MIT](./LICENSE)
 
----
+## 作者
 
-## 关于作者
-
-| | |
-|:---|:---|
-| 个人主页 | [geekjourney.dev](https://geekjourney.dev) |
-| GitHub | [geekjourneyx](https://github.com/geekjourneyx) |
-| Twitter | [@seekjourney](https://x.com/seekjourney) |
-| 公众号 | 微信搜「极客杰尼」 |
+[geekjourneyx](https://github.com/geekjourneyx) · [geekjourney.dev](https://geekjourney.dev) · [@seekjourney](https://x.com/seekjourney)

@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.1.0] - 2026-06-04
+
+### Added
+
+- Added README visual assets generated with Codex Image Gen and referenced as stable `assets/banner.png` and `assets/features.png`.
+- Added a default production assumption for new videos: Simplified Chinese promotional copy, vertical 9:16, `1080x1920`, and platform-safe top/bottom zones.
+- Added eval coverage and structure-check guards for the Chinese vertical-video default.
+
+### Changed
+
+- Reworked README layout into a clearer portfolio-style project entry with faster positioning, shorter sections, and visual examples.
+- Updated skill guidance, workflow reference, visual standard, production templates, and scaffold README so unspecified new work defaults to Chinese vertical promotional films instead of horizontal or language-neutral output.
+
 ## [2.0.0] - 2026-06-04
 
 ### Changed

@@ -35,6 +35,20 @@
       ]
     },
     {
+      "id": 5,
+      "prompt": "把这段产品介绍做成一个 12 秒宣传片：'Mimir 可以把零散会议记录整理成清晰的产品决策。' 没有特别要求平台，你自己按默认方式规划。",
+      "expected_output": "A Phase 1 brief/design proposal that treats the task as a Simplified Chinese vertical promotional film by default, using 9:16 1080x1920, vertical safe margins, sparse Chinese screen copy, cinematic black metaphor style, background image planning, and confirmation before production.",
+      "files": [],
+      "assertions": [
+        "Output defaults to Simplified Chinese promotional screen copy.",
+        "Output defaults to vertical 9:16.",
+        "Output specifies 1080x1920 or equivalent vertical dimensions.",
+        "Output includes vertical platform safe margins or bottom overlay risk handling.",
+        "Output keeps Chinese copy sparse with deliberate line breaks or low character count per beat.",
+        "Output asks for confirmation before image generation or HyperFrames implementation."
+      ]
+    },
+    {
       "id": 3,
       "prompt": "I already have a HyperFrames motion project. The client says the title feels cheap and the proof beat is too fast. Explain exactly what you would inspect and change without rewriting the whole composition.",
       "expected_output": "A targeted edit protocol that reads existing files first, maps feedback to DESIGN/SCRIPT/STORYBOARD/timeline changes, preserves unrelated timing, and reruns relevant validation and snapshots.",

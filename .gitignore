@@ -25,6 +25,7 @@ temp/
 renders/
 snapshots/
 review-pack/
+productions/
 *.mp4
 *.mov
 *.webm

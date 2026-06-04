@@ -1,6 +1,6 @@
 ---
 name: hyperframes-motion-director
-description: "Direct and produce polished Chinese-first cinematic promo films and motion videos using HyperFrames, defaulting to vertical 9:16 1080x1920 unless the user or platform clearly requires another format. Use this skill whenever the user wants a high-quality HyperFrames motion video, especially Chinese promotional films, article-to-video films, product launch films, website-to-video pieces, keynote reveals, kinetic typography sequences, music-synced motion graphics, HTML/CSS/GSAP video, big animated typography, product reveals, launch films, short-form vertical videos, or turning a landing page/product story into a rendered video. This skill enforces a strict two-phase workflow: first a brief/design proposal for user confirmation, then a cinematic metaphor production with design spec, storyboard, optional image generation, optional timing/motion maps, validation, snapshots, review report, and deterministic renders."
+description: "Direct and produce polished Chinese-first cinematic promo films and motion videos using HyperFrames, defaulting to vertical 9:16 1080x1920 unless the user or platform clearly requires another format. Use this skill whenever the user wants a high-quality HyperFrames motion video, especially Chinese promotional films, article-to-video films, product launch films, website-to-video pieces, keynote reveals, kinetic typography sequences, music-synced motion graphics, HTML/CSS3/SVG/GSAP video, big animated typography, text transitions, product reveals, launch films, short-form vertical videos, or turning a landing page/product story into a rendered video. This skill is deliberately anti-PPT: it requires cinematic metaphor, readable hold frames, kinetic typography, meaningful transitions, CSS/SVG/GSAP motion craft, validation, snapshots, review reports, and deterministic renders through a strict two-phase workflow."
 ---
 
 # HyperFrames Motion Director
@@ -17,11 +17,15 @@ Work from the final viewing experience backward:
 2. What is the underlying metaphor, not the surface content?
 3. Which background image or visual stage gives the frame depth and meaning?
 4. Which frame proves the visual direction is strong?
-5. Which beat carries the hook, reveal, proof, and CTA?
-6. Which motion choices guide attention through those beats?
-7. Which validation proves the video will render deterministically?
+5. Which movement makes the viewer keep watching?
+6. Which beat carries the hook, reveal, proof, and CTA?
+7. Which motion choices guide attention through those beats?
+8. Which visual objects compress meaning better than more words?
+9. Which validation proves the video will render deterministically?
 
 Do not begin by writing animation code. First make the intended still frames and timing legible.
+
+A good still frame is a gate, not the destination. If the result could be reduced to four screenshots without losing much, it is not yet a motion video. Treat that as a director failure, not a rendering problem.
 
 ## House Style
 
@@ -39,24 +43,74 @@ Forbidden by default:
 
 - Ordinary illustration, ecommerce banner composition, icon piles, generic tech dashboards, neon cyberpunk, multicolor palettes, gradient clutter, decorative particles, explain-the-concept diagrams, and busy collage.
 - Drawing the article surface. Always draw the essence metaphor.
+- PPT-like sequencing: static title cards, repeated fade-up scenes, identical centered layouts, empty black fades, or text pasted over wallpaper.
 
 ## Background And Motion Rule
 
 For new video work, plan background imagery by default. Do not generate it during Phase 1. After confirmation, use Codex Image Gen for needed project-bound bitmap assets unless the user supplied strong assets or the confirmed direction is intentionally pure kinetic typography.
 
-Treat each frame as three coordinated layers:
+Treat each frame as four coordinated layers:
 
 1. Background image as stage: atmosphere, depth, light, metaphor, or product context.
 2. Typography as message: readable hierarchy, fixed safe zones, controlled line counts, no accidental overlap with busy image regions.
-3. Motion as attention direction: one primary motion idea per scene, one optional support motion, and enough stillness after each important reveal.
+3. Visual objects as meaning compression: restrained symbols, functional icons, props, frames, marks, or texture pieces that replace explanation, guide attention, or prove the process.
+4. Motion as attention direction: one primary motion idea per scene, one optional support motion, and enough stillness after each important reveal.
 
 Use `references/motion-background-system.md` for image counts, text-over-image layout, motion grammar, and review gates.
+
+## Visual Object Discipline
+
+Do not confuse visual richness with decoration. A premium motion video usually needs more than background plus text, but every added object must earn its place.
+
+Before implementation, define a small visual object system:
+
+- Primary object: the one prop, symbol, product surface, frame, or material that the viewer should remember.
+- Functional marks: 1-3 small icons, stamps, brackets, ticks, rails, labels, or guide marks that replace explanation, direct attention, or show proof.
+- Texture pieces: sparse fragments, dust, paper, grain, light, or depth cues that create atmosphere without becoming confetti.
+- Object motion: how the object enters, transforms, hands off, or proves the beat.
+- Removal test: what meaning is lost if the object is deleted.
+
+Hard rules:
+
+- Do not create icon piles. One visual language per video is enough.
+- Do not place a small icon beside every line of text.
+- Do not add generic symbols such as rockets, lightning, sparkles, AI chips, or random checkmarks unless the brief makes them literal and necessary.
+- Do not use icons as labels for an unclear metaphor. If the object needs a label to make sense, redesign the metaphor.
+- Prefer project-specific objects: source paper, film frame, scan rail, confirmation stamp, inspection bracket, product surface, timeline, lens, cursor, map route, seal, or artifact.
+- Add at most one primary object system and three functional mark types in a 20s vertical promo.
+- The review report must state whether added visual objects are necessary, restrained, and removable without harming the story.
+
+## Anti-PPT Motion Craft Rule
+
+The default failure mode of AI motion work is readable but dead: a static poster sequence with opacity fades. This skill must actively avoid that failure.
+
+Before implementation, every multi-beat video must define a motion craft plan:
+
+- Camera behavior: push, pan, parallax, focus pull, crop discovery, or deliberate stillness.
+- Type behavior: how text enters, locks, receives emphasis, exits, and bridges into the next beat.
+- SVG/CSS3 structure: which masks, paths, scan lines, frames, underlines, clip paths, blend modes, filters, or CSS variables carry transitions.
+- GSAP choreography: a paused master timeline with labels, absolute timing, meaningful transitions, and still readable holds.
+- Signature motion moment: one memorable movement that belongs to the idea, not a reusable template effect.
+
+Use `references/motion-craft.md` before deciding text transitions, SVG/CSS layers, GSAP timelines, or whether a video feels too much like a PPT.
+
+Good motion changes meaning. It reveals, compares, transforms, compresses, releases, directs, or proves. If motion can be removed without changing the story, redesign it.
+
+Hard gates for short vertical promos:
+
+- In videos 20 seconds or shorter, at least one hook or core-viewpoint frame must use center or upper-center text impact. If it does not, document what stronger visual subject owns that zone and why that is better for attention.
+- The first 0-2 seconds must state the first eye target, the biggest word or object, and the motion event that stops the scroll. A passive fade-in is not enough.
+- If three or more beats use the same textRect, same text entry, and same rhythm, mark the storyboard as PPT-risk and redesign the layout or motion before implementation.
+- At least one important text moment must use a real transition device: mask, scan, split, compression, assembly, path handoff, or equivalent. Plain opacity plus y-position is only a supporting move.
+- The review report must include an anti-PPT verdict. If the video loses almost no meaning when reduced to screenshots, it is not ready.
 
 ## Text Over Background Layout Rule
 
 For every beat where text appears on or near a background image, choose the layout contract before generating images or writing animation code. The contract determines the image ratio, subject position, text axis, quiet text zone, crop-safe area, title size tier, motion bounds, and mobile safe boundaries.
 
 Use `references/text-over-background-layout.md` before planning generated images, text-over-image treatment, storyboard hero frames, or HyperFrames layout CSS.
+
+Do not default important copy to the lower half just because it is safe. The hook, central viewpoint, and amplified keyword usually need visual impact near the first-attention zone: center to slightly above center. Lower-middle and lower-third text are acceptable when the subject occupies the center, when a CTA must hold calmly, or when the selected metaphor depends on top/center imagery. Otherwise, ask first: where should the viewer's eyes go in the first second?
 
 Every new video brief must name a candidate layout strategy. The design system must name default strategies and allowed variants. The storyboard must lock one final layout contract per text-over-background beat after generated or supplied imagery is inspected. A final contract must be specific enough to draw on a 1080x1920 canvas:
 
@@ -97,10 +151,14 @@ The proposal must include:
 - Format: language, platform, aspect ratio, pixel size, duration, FPS, safe margins. Default to Simplified Chinese, vertical 9:16, and `1080x1920` unless overridden.
 - Image decision: whether generated bitmap images are needed, what each image should be, image ratio, and what must stay in HyperFrames.
 - Background plan: image role, layout contract, subject position, quiet text zone, crop risks, and whether Codex Image Gen will be used after confirmation.
+- Visual object plan: primary object, functional marks, texture pieces, why each object is necessary, and what must not be added.
 - Typography: title/support/CTA scale, title size tier, line-height, letter-spacing, maximum lines, text spacing, overflow handling.
 - Layout: dominant visual mass, layout contract, grid/alignment, crop-safe zones, mobile overlay risks.
 - Motion: main reveal, background motion, transition style, hold times, easing, audio hit plan, motion bounds, and what must remain still.
+- Motion craft: camera behavior, kinetic typography, text transition pattern, SVG/CSS3 layers, GSAP timeline structure, and signature motion moment.
 - Risk gates: what could make it look cheap, unreadable, noisy, or off-style.
+- Anti-PPT risk: what would make the piece feel like slides rather than a film, and how the direction avoids it.
+- Attention map: first eye target, center-impact decision, and why text is center, upper-center, side-title, or lower-safe.
 
 End Phase 1 with a clear confirmation request. Production starts only after the user confirms, revises, or explicitly says to proceed.
 
@@ -134,11 +192,14 @@ After user confirmation, create or update:
 1. `DESIGN.md`
 2. `STORYBOARD.md`
 3. Background, symbol, texture, product, or anchor image assets when the confirmed direction needs bitmap source material.
-4. HyperFrames composition files.
-5. `REVIEW_REPORT.md`
-6. `REVIEW_PACK.md` for handoff.
+4. Visual object assets or inline SVG/CSS object layers when the direction needs symbols, marks, props, inspection brackets, stamps, rails, or other meaning-compressing objects.
+5. HyperFrames composition files.
+6. `REVIEW_REPORT.md`
+7. `REVIEW_PACK.md` for handoff.
 
 Use `BEAT_MAP.json` only when music, voiceover, or exact timing matters. Use `MOTION_MAP.json` when GSAP choreography, background parallax, focus pulls, masks, or scene transitions are complex enough to need a separate map.
+
+For any multi-scene video longer than 8 seconds, default to a `MOTION_MAP.json` unless the storyboard is intentionally simple and documents why a separate map would add no clarity. If the user says the work feels like PPT, static, flat, template-like, or under-animated, a motion map is required.
 
 Use the templates in `templates/`.
 
@@ -151,6 +212,7 @@ Map the user's request to the smallest artifact that should change:
 - Copy or CTA issue: update `STORYBOARD.md` and the relevant text nodes.
 - Visual style issue: update `DESIGN.md` and relevant CSS variables.
 - Scene composition issue: update the scene HTML/CSS.
+- Visual object issue: update `DESIGN.md`, `STORYBOARD.md`, and the object layers before changing broad motion.
 - Timing or rhythm issue: update `STORYBOARD.md`, optional `BEAT_MAP.json`, and timeline positions.
 - Motion issue: update only the relevant GSAP timeline.
 - Stability issue: update code and rerun validation.
@@ -201,11 +263,12 @@ Keep it short and decisive. It is a production contract, not a brainstorm. Stop 
 
 Create `DESIGN.md` from `templates/DESIGN.template.md`.
 
-The design system must specify typography, color, spacing, density, metaphor symbol, background-image system, generated-image plan, text-over-image rules, and motion personality. This prevents downstream steps from improvising a new visual language.
+The design system must specify typography, color, spacing, density, metaphor symbol, visual object system, background-image system, generated-image plan, text-over-image rules, and motion personality. This prevents downstream steps from improvising a new visual language.
 
 Read `references/visual-standard.md` before judging visual quality, typography, layout, or motion.
 Read `references/motion-background-system.md` before deciding image count, background roles, animation grammar, or text-over-image treatment.
 Read `references/text-over-background-layout.md` before deciding layout contracts, image ratios, text rectangles, subject rectangles, title tiers, crop-safe zones, or bottom-safe boundaries.
+Read `references/motion-craft.md` before deciding kinetic typography, CSS/SVG layers, scene transitions, GSAP structure, or anti-PPT quality gates.
 
 ### 4. Storyboard And Copy
 
@@ -232,9 +295,14 @@ Every beat needs:
 - Screen text or visual action.
 - Hero frame timestamp.
 - Layout and visual hierarchy.
+- Attention map: first eye target, primary focal zone, and whether text should dominate center or defer to the subject.
+- Hero text zone: center, upper-center, side, lower-safe, or split, with a reason.
 - Background image state and text-safe zone.
 - Layout contract, including textRect, subjectRect, title tier, safeBottomY, and motion bounds.
-- Motion direction.
+- Text transition: entry, lock, emphasis, exit, and bridge.
+- Text transition device: mask, scan, split, compression, assembly, handoff, or explicit reason for stillness.
+- What changes if motion is removed.
+- Motion direction: camera, background, symbol, text, SVG/CSS layer, and transition movement.
 - Attention target and stillness/hold requirement.
 - Transition out.
 - Audio or rhythm notes when relevant.
@@ -297,6 +365,8 @@ Before animating each scene, answer:
 - Which elements must remain still so the viewer can read?
 - Where is the stillness after the reveal?
 - How does this motion change meaning rather than add noise?
+- Which CSS3/SVG device carries structure: mask, path, clip, scan line, frame, underline, perspective layer, or blend?
+- How does the outgoing text become the next scene's bridge instead of disappearing into a generic fade?
 
 For GSAP in HyperFrames:
 
@@ -304,8 +374,10 @@ For GSAP in HyperFrames:
 - Register timelines for HyperFrames control.
 - Use explicit position parameters for timing.
 - Keep timeline construction synchronous and deterministic.
+- Prefer a labeled master timeline over unrelated per-element effects.
+- Animate transforms, opacity, filters, masks, clip paths, and CSS variables; avoid layout-shifting properties for render-critical motion.
 
-Read `references/hyperframes-stability.md` before rendering.
+Read `references/motion-craft.md` before judging whether the movement is strong enough. Read `references/hyperframes-stability.md` before rendering.
 
 Create optional `MOTION_MAP.json` from `templates/MOTION_MAP.template.json` only when selectors, labels, timing, easing, and transitions would otherwise become hard to review.
 
@@ -372,10 +444,13 @@ Before claiming the video is ready:
 - Each text-over-background beat declares a layout contract with textRect, subjectRect, safeBottomY, title tier, and motion bounds.
 - Text overflow, max lines, responsive layout, and crop-safe areas are explicitly handled.
 - At least one meaningful transition connects scenes in a multi-scene video.
+- A multi-scene video has a motion craft plan with kinetic typography, CSS/SVG structure, GSAP timeline labels, and a signature motion moment, or a documented reason for deliberate stillness.
+- Text transitions define entry, readable lock, emphasis, exit, and bridge for important beats.
 - Important copy has enough hold time to read.
 - Background imagery exists by default for new videos or the pure-code/supplied-asset exception is explained.
 - Each generated image has a role, quiet text zone, and local project path before it is referenced.
 - Motion uses a clear attention target, a limited motion budget, and at least one still hold after important reveals.
+- Motion avoids PPT failure modes: repeated fade-up, identical centered layouts, empty black fades, static wallpaper, and movement that does not affect meaning.
 - Typography avoids lazy defaults and documents type scale, line height, and hierarchy.
 - The essence extraction exists and every visual choice supports it.
 - The final visual language obeys the house style unless the user explicitly changed it.
@@ -405,6 +480,7 @@ Use seeded randomness, fixed duration, fixed fps, fixed dimensions, local assets
 - Read `references/workflow.md` for the full production workflow.
 - Read `references/visual-standard.md` when judging style, typography, layout, and motion.
 - Read `references/text-over-background-layout.md` when planning layout contracts, text rectangles, subject rectangles, title tiers, crop-safe zones, and mobile safe boundaries.
+- Read `references/motion-craft.md` when planning kinetic typography, CSS3/SVG structure, GSAP choreography, scene transitions, or anti-PPT improvements.
 - Read `references/audio-sync.md` when timing to music, voiceover, or captions.
 - Read `references/hyperframes-stability.md` before implementing or debugging render behavior.
 

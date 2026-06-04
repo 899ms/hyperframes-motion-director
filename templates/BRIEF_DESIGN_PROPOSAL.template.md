@@ -26,6 +26,10 @@
 - Background: `#050505`
 - Palette: white / gray / restrained warm gold
 - Center symbol:
+- First eye target:
+- First 0-2s scroll-stop event:
+- Biggest word or object:
+- Center-impact text decision:
 - Lighting:
 - Texture:
 - Forbidden visuals:
@@ -50,9 +54,23 @@
 - No baked-in text unless required:
 - Forbidden image content:
 
+## Visual Object Plan
+- Primary visual object:
+- Why this object is necessary:
+- Functional marks:
+- Texture pieces:
+- Object motion:
+- Removal test:
+- Objects to avoid:
+- Icon / decoration restraint:
+
 ## Typography And Layout
 - Copy language: Simplified Chinese unless explicitly overridden
 - Title scale:
+- Visual impact line:
+- First-screen attention zone:
+- Hook text zone: center / upper-center / side / lower-safe / split
+- If not center / upper-center, why:
 - Title size tier:
 - Support text scale:
 - CTA / brand scale:
@@ -65,6 +83,7 @@
 - Max text width:
 - Overflow handling:
 - Vertical crop handling:
+- Center vs lower-safe rationale:
 - Text-over-image contrast treatment:
 - Mobile safe-zone handling:
 - Regenerate / recrop trigger:
@@ -74,12 +93,18 @@
 - Background motion:
 - Main attention target:
 - Transition style:
+- Text transition style:
+- Kinetic typography plan:
+- CSS3 / SVG structure:
+- GSAP choreography:
+- Signature motion moment:
 - Hold times:
 - Easing:
 - Audio hit plan:
 - What must stay still:
 - Motion budget:
 - Motion bounds:
+- Anti-PPT prevention:
 
 ## Risk Gates
 - Cheapness risk:

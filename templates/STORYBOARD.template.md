@@ -17,18 +17,30 @@
 - Screen text / visual:
 - Text role: title / support / proof / CTA / subtitle
 - Chinese line break:
+- First eye target:
+- Center-impact decision:
+- Hero text zone: center / upper-center / side / lower-safe / split
+- Why this zone owns attention:
+- If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
+- Primary visual object:
+- Functional visual marks:
+- Object removal test:
 - Text-safe zone:
 - Layout contract:
 - Title size tier:
 - Attention target:
 - Readable hold:
-- Choreography: entrance / hold / exit / transition bridge / audio hit
+- Text transition: entry / lock / emphasis / exit / bridge
+- Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
+- What changes if this motion is removed:
+- Choreography: camera / background / symbol / text / SVG-CSS layer / transition bridge / audio hit
 - Motion bounds:
 - Transition midpoint snapshot:
 - Quality risk:
+- Anti-PPT risk:
 - Hold-frame verdict:
 
 ## Beat 2 - Reveal
@@ -37,18 +49,30 @@
 - Screen text / visual:
 - Text role: title / support / proof / CTA / subtitle
 - Chinese line break:
+- First eye target:
+- Center-impact decision:
+- Hero text zone: center / upper-center / side / lower-safe / split
+- Why this zone owns attention:
+- If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
+- Primary visual object:
+- Functional visual marks:
+- Object removal test:
 - Text-safe zone:
 - Layout contract:
 - Title size tier:
 - Attention target:
 - Readable hold:
-- Choreography: entrance / hold / exit / transition bridge / audio hit
+- Text transition: entry / lock / emphasis / exit / bridge
+- Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
+- What changes if this motion is removed:
+- Choreography: camera / background / symbol / text / SVG-CSS layer / transition bridge / audio hit
 - Motion bounds:
 - Transition midpoint snapshot:
 - Quality risk:
+- Anti-PPT risk:
 - Hold-frame verdict:
 
 ## Beat 3 - Proof
@@ -57,18 +81,30 @@
 - Screen text / visual:
 - Text role: title / support / proof / CTA / subtitle
 - Chinese line break:
+- First eye target:
+- Center-impact decision:
+- Hero text zone: center / upper-center / side / lower-safe / split
+- Why this zone owns attention:
+- If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
+- Primary visual object:
+- Functional visual marks:
+- Object removal test:
 - Text-safe zone:
 - Layout contract:
 - Title size tier:
 - Attention target:
 - Readable hold:
-- Choreography: entrance / hold / exit / transition bridge / audio hit
+- Text transition: entry / lock / emphasis / exit / bridge
+- Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
+- What changes if this motion is removed:
+- Choreography: camera / background / symbol / text / SVG-CSS layer / transition bridge / audio hit
 - Motion bounds:
 - Transition midpoint snapshot:
 - Quality risk:
+- Anti-PPT risk:
 - Hold-frame verdict:
 
 ## Beat 4 - CTA
@@ -77,18 +113,30 @@
 - Screen text / visual:
 - Text role: title / support / proof / CTA / subtitle
 - Chinese line break:
+- First eye target:
+- Center-impact decision:
+- Hero text zone: center / upper-center / side / lower-safe / split
+- Why this zone owns attention:
+- If lower-safe, what occupies center:
 - Hero frame timestamp:
 - Metaphor role:
 - Background / main visual state:
+- Primary visual object:
+- Functional visual marks:
+- Object removal test:
 - Text-safe zone:
 - Layout contract:
 - Title size tier:
 - Attention target:
 - Readable hold:
-- Choreography: entrance / hold / exit / transition bridge / audio hit
+- Text transition: entry / lock / emphasis / exit / bridge
+- Text transition device: mask / scan / split / compression / assembly / handoff / deliberate stillness
+- What changes if this motion is removed:
+- Choreography: camera / background / symbol / text / SVG-CSS layer / transition bridge / audio hit
 - Motion bounds:
 - Transition midpoint snapshot:
 - Quality risk:
+- Anti-PPT risk:
 - Hold-frame verdict:
 
 ## Visual Asset Breakdown
@@ -97,6 +145,9 @@
 - Generated image 2:
 - Generated image 2 role / size / layout contract / local path:
 - Generated texture / atmosphere:
+- Primary visual object system:
+- Functional mark types:
+- Object restraint rules:
 - Background stage:
 - Layout contracts:
 - HyperFrames-only elements:

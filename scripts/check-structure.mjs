@@ -10,6 +10,7 @@ const requiredFiles = [
   "references/workflow.md",
   "references/visual-standard.md",
   "references/motion-background-system.md",
+  "references/motion-craft.md",
   "references/text-over-background-layout.md",
   "references/audio-sync.md",
   "references/hyperframes-stability.md",

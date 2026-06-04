@@ -17,8 +17,13 @@
 | snapshot |  |  |
 | render |  |  |
 | first frame |  |  |
+| first eye target |  |  |
 | transition midpoints |  |  |
 | layout overflow |  |  |
+| visual object necessity |  |  |
+| kinetic typography |  |  |
+| SVG / CSS3 motion structure |  |  |
+| anti-PPT verdict |  |  |
 | console errors |  |  |
 
 ## Snapshot Notes
@@ -43,6 +48,7 @@ Required snapshots: first frame, each hero frame, each transition midpoint, CTA 
 | Brand fidelity / 10 |  |  |
 | Typography / 15 |  |  |
 | Frame composition / 15 |  |  |
+| Visual object system / 10 |  |  |
 | Motion choreography / 15 |  |  |
 | Transition quality / 10 |  |  |
 | Audio sync / 10 |  |  |
@@ -58,6 +64,10 @@ Required snapshots: first frame, each hero frame, each transition midpoint, CTA 
 - Surface-topic illustration avoided:
 - Background image or pure-code exception is verified:
 - Background role supports meaning rather than decoration:
+- Primary visual object is necessary and memorable:
+- Functional marks replace explanation instead of decorating:
+- Texture pieces stay sparse and metaphor-specific:
+- Visual objects pass the removal test:
 - Layout contract matches the image and message shape:
 - TextRect, subjectRect, and safeBottomY are verified:
 - Text sits in a safe quiet zone:
@@ -68,10 +78,28 @@ Required snapshots: first frame, each hero frame, each transition midpoint, CTA 
 - One dominant symbol or title per frame:
 - Motion has a clear attention target:
 - Motion is not repeated template fade/translate:
+- Hook or amplified keyword owns the right attention zone:
+- Text transitions define entry, lock, emphasis, exit, and bridge:
+- CSS3 / SVG layers carry structure rather than decoration:
+- GSAP timeline uses labels and meaningful scene bridges:
+- Video would lose meaning if reduced to screenshots:
 - Important text settles before it must be read:
 - No ecommerce banner, icon pile, neon tech, multicolor palette, or busy collage:
+- No per-line icon decoration, generic symbol pile, or decorative badges:
 - Generated images saved locally and composed in HyperFrames:
 - Hold-frame verdict passed for hero frames:
+
+## No-Go Gates
+- Hook appears in the first attention zone by 0-2s, or the stronger center subject is justified:
+- At least one hook or core-viewpoint frame uses center / upper-center text impact for short vertical promos:
+- Fewer than three beats repeat the same textRect, same entry, and same rhythm:
+- Important text uses at least one real transition device beyond opacity + y:
+- Text transition has entry, lock, emphasis, exit, and bridge:
+- Motion uses CSS3 / SVG / GSAP structure or documents a deliberate stillness exception:
+- Visual object system has one primary object and no more than three mark types:
+- Added objects are not generic decoration:
+- Reducing the video to screenshots would remove meaningful motion information:
+- Anti-PPT verdict: pass / revise before delivery
 
 ## Issues
 1. 

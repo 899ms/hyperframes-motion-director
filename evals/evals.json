@@ -15,6 +15,8 @@
         "Output includes generated image or visual asset planning when bitmap key visuals are useful.",
         "Output includes a beat-by-beat storyboard with timing and hero frame timestamps.",
         "Output explicitly uses layout before animation or static hero frame review before GSAP.",
+        "Output declares the first eye target and does not automatically demote hook text to the lower half.",
+        "Output includes kinetic typography or text transition planning beyond opacity plus y movement.",
         "Output includes HyperFrames validation/snapshot/render checks.",
         "Output includes deterministic GSAP or render-stability guidance."
       ]
@@ -30,7 +32,9 @@
         "Output forbids noisy icon piles, ecommerce banner composition, neon tech clutter, or multicolor palettes.",
         "Output includes beat timing for a 15 second video.",
         "Output includes GSAP motion choreography with explicit timing or easing guidance.",
+        "Output includes CSS3 or SVG structure such as masks, paths, clip reveals, scan lines, frames, or connectors.",
         "Output includes a transition plan.",
+        "Output includes an anti-PPT check or explains how the film avoids static slide sequencing.",
         "Output includes validation and snapshot review steps."
       ]
     },
@@ -44,6 +48,7 @@
         "Output defaults to vertical 9:16.",
         "Output specifies 1080x1920 or equivalent vertical dimensions.",
         "Output includes vertical platform safe margins or bottom overlay risk handling.",
+        "Output identifies whether the hook text should occupy center/upper-center attention or a lower-safe zone.",
         "Output keeps Chinese copy sparse with deliberate line breaks or low character count per beat.",
         "Output asks for confirmation before image generation or HyperFrames implementation."
       ]
@@ -56,7 +61,9 @@
       "assertions": [
         "Output says to inspect existing project files before changing anything.",
         "Output maps the cheap title feedback to typography/design/layout changes.",
+        "Output considers first eye target, center-impact typography, and whether important text was placed too low.",
         "Output maps the fast proof beat feedback to script/storyboard/beat map/timeline changes.",
+        "Output diagnoses whether motion feels PPT-like because of repeated fades or weak text transitions.",
         "Output explicitly avoids rewriting unrelated composition sections.",
         "Output includes validation and snapshots after the targeted edit.",
         "Output reports what changed and what stayed unchanged."
@@ -74,6 +81,22 @@
         "Output includes review pack or review handoff plan.",
         "Output includes local deterministic checks such as asset check or artifact score.",
         "Output states that final render is deferred until composition/assets/HyperFrames CLI are available."
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "这个 20 秒 HyperFrames 宣传片看起来像 PPT：文字都在下半区，Hook 没视觉冲击，动画只有淡入淡出。请批判性诊断，并升级成更有传播感的 CSS3/SVG/GSAP 文字动效方案。",
+      "expected_output": "A critical improvement plan that identifies attention-map failures, moves hook or amplified keywords toward center/upper-center impact when appropriate, adds kinetic typography, SVG/CSS structural transitions, a labeled GSAP timeline plan, and anti-PPT review gates before render.",
+      "files": [],
+      "assertions": [
+        "Output explicitly criticizes lower-half default placement when it weakens the hook.",
+        "Output declares the first eye target for the hook and at least one later beat.",
+        "Output proposes center or upper-center visual impact for hook or amplified keyword text unless a subject owns that zone.",
+        "Output includes text transition planning with entry, lock, emphasis, exit, and bridge.",
+        "Output includes CSS3 or SVG devices such as clip-path, mask, path, scan line, frame, underline, or connector.",
+        "Output includes GSAP choreography using a labeled or master timeline with explicit timing.",
+        "Output includes an anti-PPT review gate based on whether the video loses meaning when reduced to screenshots.",
+        "Output preserves readable hold time rather than making all text move continuously."
       ]
     }
   ]

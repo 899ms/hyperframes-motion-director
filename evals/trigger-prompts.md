@@ -20,6 +20,8 @@ Use these prompts later for trigger and non-trigger evaluation of the skill desc
 14. "Build a review pack for this HyperFrames motion video so the client can inspect snapshots, watch notes, blockers, and next edit."
 15. "Turn this article into a black-background cinematic metaphor video. Do not draw the surface topic; extract the core conflict and make a HyperFrames motion piece."
 16. "Use image generation for the center symbol, then compose the final HyperFrames motion video with sparse typography, dark cinematic lighting, and snapshots."
+17. "这个 HyperFrames 成片太像 PPT 了，文字都在下半区，没有视觉冲击，帮我从导演角度重做文字排版、转场、CSS/SVG/GSAP 动效。"
+18. "The hook has no impact because all the text sits in the lower third. Rework the HyperFrames storyboard with center-impact typography and real text transitions."
 
 ## Should Not Trigger
 
@@ -36,3 +38,4 @@ Use these prompts later for trigger and non-trigger evaluation of the skill desc
 11. "Install HyperFrames and tell me whether it is better than Remotion, but don't make a video."
 12. "Write a GSAP timeline for a website hero animation that will never be rendered as video."
 13. "Make a project management checklist for a generic video shoot with cameras and actors."
+14. "帮我评价一份 PPT 演示稿的版式，不需要做 HyperFrames 视频。"

@@ -12,7 +12,20 @@
     "support_motion_per_scene": 1,
     "background_motion_policy": "slow push / parallax / focus pull / light sweep / none",
     "text_stillness_required": true,
-    "signature_motion_moment": ""
+    "signature_motion_moment": "",
+    "anti_ppt_policy": "motion must reveal, transform, bridge, or direct attention; avoid repeated opacity+y entrances"
+  },
+  "attention_map": {
+    "first_eye_target": "",
+    "first_two_seconds": {
+      "target": "",
+      "largest_word_or_object": "",
+      "scroll_stop_motion_event": "",
+      "passive_fade_is_not_enough": true
+    },
+    "center_impact_beats": [],
+    "lower_safe_beats": [],
+    "rationale": ""
   },
   "selectors": {
     "background": ".background-stage",
@@ -21,6 +34,32 @@
     "proof": ".proof",
     "cta": ".cta-lockup"
   },
+  "css3_layers": [
+    {
+      "selector": ".mask-reveal",
+      "role": "clip-path / mask / perspective / blend / filter / CSS variable carrier",
+      "animated_properties": ["clipPath", "opacity", "transform"],
+      "purpose": "Give text or scene transition a structural reveal instead of a generic fade."
+    }
+  ],
+  "svg_layers": [
+    {
+      "selector": ".scan-path",
+      "role": "path / mask / underline / connector / logo lockup",
+      "animated_properties": ["strokeDashoffset", "opacity", "transform"],
+      "purpose": "Create a visible bridge between beats."
+    }
+  ],
+  "kinetic_typography": [
+    {
+      "selector": ".title",
+      "entry": "clip reveal / scan reveal / split-line reveal / word assembly",
+      "lock": "settles before reading hold",
+      "emphasis": "one keyword only",
+      "exit": "exits through bridge, mask, or subject movement",
+      "bridge": "outgoing scan/path/light becomes next scene transition"
+    }
+  ],
   "background_layers": [
     {
       "selector": ".background-stage",
@@ -36,6 +75,25 @@
       "label": "metaphor-rim-light-reveal",
       "at": 0.2,
       "selector": ".center-symbol",
+      "text_zone": "center / upper-center / side / lower-safe / split",
+      "highlighted_word": "",
+      "readable_lock_time": 1.1,
+      "text_transition": {
+        "entry": "",
+        "lock": "",
+        "emphasis": "",
+        "exit": "",
+        "bridge": ""
+      },
+      "text_transition_device": "mask / scan / split / compression / assembly / handoff / deliberate stillness",
+      "bridge_element": "scan line / SVG path / mask / camera move / text baseline / light sweep",
+      "uses_css_svg_gsap": {
+        "css3": false,
+        "svg": false,
+        "gsap": true
+      },
+      "not_opacity_y_only_evidence": "",
+      "what_changes_if_motion_removed": "",
       "method": "from",
       "properties": {
         "opacity": 0,
@@ -50,6 +108,25 @@
       "label": "background-camera-drift",
       "at": 0,
       "selector": ".background-stage",
+      "text_zone": "background support",
+      "highlighted_word": "",
+      "readable_lock_time": null,
+      "text_transition": {
+        "entry": "none",
+        "lock": "background preserves quiet zone",
+        "emphasis": "camera supports subject",
+        "exit": "continues under transition",
+        "bridge": "camera movement maintains spatial continuity"
+      },
+      "text_transition_device": "deliberate stillness",
+      "bridge_element": "camera move",
+      "uses_css_svg_gsap": {
+        "css3": true,
+        "svg": false,
+        "gsap": true
+      },
+      "not_opacity_y_only_evidence": "camera transform changes spatial depth instead of only fading text",
+      "what_changes_if_motion_removed": "the stage becomes static wallpaper",
       "method": "to",
       "properties": {
         "scale": 1.035,
@@ -62,6 +139,25 @@
       "label": "title-lockup",
       "at": 1.4,
       "selector": ".title",
+      "text_zone": "center / upper-center / side / lower-safe / split",
+      "highlighted_word": "",
+      "readable_lock_time": 2.1,
+      "text_transition": {
+        "entry": "masked reveal",
+        "lock": "title fully readable",
+        "emphasis": "one keyword receives visual hit",
+        "exit": "keyword hands off to transition device",
+        "bridge": "mask or scan becomes next beat connector"
+      },
+      "text_transition_device": "mask",
+      "bridge_element": "mask / scan line",
+      "uses_css_svg_gsap": {
+        "css3": true,
+        "svg": false,
+        "gsap": true
+      },
+      "not_opacity_y_only_evidence": "clip-path or mask changes the word reveal; opacity is only secondary",
+      "what_changes_if_motion_removed": "the hook becomes a static title card",
       "method": "from",
       "properties": {
         "opacity": 0,
@@ -75,6 +171,25 @@
       "label": "tension-to-proof-transition",
       "at": 2.2,
       "selector": ".scene-hook",
+      "text_zone": "transition bridge",
+      "highlighted_word": "",
+      "readable_lock_time": null,
+      "text_transition": {
+        "entry": "outgoing title already locked",
+        "lock": "transition midpoint remains legible or intentionally text-free",
+        "emphasis": "bridge element owns attention",
+        "exit": "old text clears through mask/path",
+        "bridge": "same bridge element introduces next beat"
+      },
+      "text_transition_device": "handoff",
+      "bridge_element": "rim-light dissolve / mask wipe / directed cut",
+      "uses_css_svg_gsap": {
+        "css3": true,
+        "svg": true,
+        "gsap": true
+      },
+      "not_opacity_y_only_evidence": "shared mask/path/light carries the scene change",
+      "what_changes_if_motion_removed": "the edit becomes an empty fade between slides",
       "method": "to",
       "properties": {
         "scale": 1.025,
@@ -106,6 +221,7 @@
       "start": 2.2,
       "end": 2.7,
       "mechanism": "rim-light dissolve / mask wipe / directed cut",
+      "attention_bridge": "shared scan line, SVG path, crop window, text baseline, light direction, or camera move",
       "risk": "Do not transition through an empty black frame."
     }
   ],
@@ -113,7 +229,9 @@
     "Deep black #050505 background.",
     "White, gray, and restrained warm gold only.",
     "No neon cyberpunk, multicolor gradients, icon piles, ecommerce banner layout, or generic tech clutter.",
-    "Motion must reveal the metaphor rather than decorate the frame."
+    "Motion must reveal the metaphor rather than decorate the frame.",
+    "Hook and key viewpoint text should own center or upper-center attention unless the visual subject deliberately owns that zone.",
+    "Avoid static PPT sequencing: repeated centered title cards, repeated fade-up, static wallpaper, and empty black fades."
   ],
   "stability_notes": [
     "No Date.now(), unseeded Math.random(), setTimeout, setInterval, requestAnimationFrame as timeline truth, or runtime network asset fetches."

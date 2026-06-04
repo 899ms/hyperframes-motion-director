@@ -11,6 +11,8 @@ Most weak motion videos fail for the same reasons:
 - Motion adds activity but does not guide attention.
 - Too many elements compete for hero status.
 - Paused hold frames do not communicate clearly.
+- Important text is placed in a safe lower area even when it should dominate the first attention zone.
+- Motion is only a slide entrance, so the video feels like a PPT export.
 
 The fix: background creates the world, typography carries the message, motion directs the eye.
 
@@ -53,6 +55,7 @@ Reject images that are only decoration.
 
 - Reserve a quiet text zone before generating or cropping.
 - Declare the layout contract, including text rectangle, subject rectangle, image ratio, title tier, mobile safe zones, and motion bounds.
+- Declare the first eye target. Hook text and amplified keywords should usually own center or upper-center attention unless the visual subject deliberately owns that area.
 - Keep the focal subject away from title and CTA zones.
 - Use local treatment behind text: vignette, shadow plate, gradient mask, blur, or desaturation.
 - Put small proof text only on calm image areas.
@@ -81,6 +84,18 @@ Motion budget:
 Prefer mask reveal, clip reveal, rim-light sweep, focus pull, parallax, cross-dissolve, scale settle, or morph-to-logo.
 
 Avoid repeated `y + opacity`, linear primary reveals, infinite loops, decorative particles, random icons, and moving text during reading time.
+
+## CSS3 / SVG / GSAP Motion Craft
+
+Use HTML/CSS/SVG/GSAP as a film language, not only a rendering method.
+
+- CSS3: use `clip-path`, `mask-image`, `filter`, `mix-blend-mode`, perspective transforms, CSS variables, and local darkening when they express reveal, focus, pressure, or transition.
+- SVG: use paths, masks, strokes, scan lines, underlines, frames, connectors, and logo lockups when vector structure can guide attention.
+- GSAP: build a paused master timeline with labels and explicit positions. Use nested scene timelines only when they remain attached to the master timeline.
+- Kinetic typography: define entry, lock, emphasis, exit, and bridge for every important text block.
+- Text transitions should transform attention, not just remove one line and show the next.
+
+If a beat can be described as "text fades up over image," it is under-directed. Rewrite the motion in terms of mask, light, path, camera, crop, split, compression, assembly, or handoff.
 
 ## Prompt Requirements
 

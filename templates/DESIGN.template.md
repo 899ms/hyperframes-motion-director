@@ -34,6 +34,9 @@
 - Pixel size: 1080x1920 by default
 - Safe margins: protect top/bottom platform UI zones; keep primary copy center-safe
 - Grid / alignment: one dominant symbol or title with large negative space.
+- First eye target: define what the viewer notices first in each hero frame.
+- Center-impact policy: hooks and amplified keywords should use center or upper-center impact unless the subject must own that zone.
+- Lower-safe policy: use lower-middle/lower-third text mainly for CTA, proof notes, or when the subject occupies the center.
 - Density: sparse; every visible element must earn its place.
 - Hero frame rules: readable while paused; no explanatory icon clusters.
 
@@ -71,6 +74,11 @@
 
 ## Components
 - Center symbol:
+- Primary visual object:
+- Functional marks:
+- Texture pieces:
+- Object restraint:
+- Removal test:
 - Title card:
 - Product frame:
 - Proof / stat moment:
@@ -88,6 +96,19 @@
 - Text stillness: major copy must settle before it needs to be read.
 - Signature motion moment:
 - Repeated animation pattern to avoid:
+
+## Motion Craft System
+- Anti-PPT diagnosis:
+- Camera / spatial movement:
+- Kinetic typography language:
+- Text transition vocabulary:
+- CSS3 layers:
+- SVG layers:
+- GSAP master timeline structure:
+- Scene transition bridges:
+- Readable lock moments:
+- Signature motion moment:
+- Motion devices to avoid:
 
 ## Image Generation Plan
 - Key visual 1:

@@ -6,6 +6,8 @@ Use this reference whenever text sits on, beside, or near a generated background
 
 Do not generate or place an image before choosing the layout intent. The intent defines the relationship between message, subject, background, movement, and transition. From that relationship, derive image ratio, subject position, quiet text zone, type scale, crop behavior, motion boundaries, and transition logic.
 
+Before choosing a lower-safe layout, map attention. In vertical video, the strongest first-read zone is center to slightly above center. Use this zone for hooks, sharp viewpoints, emotional keywords, and big typographic moments unless the visual subject must own it. Lower-middle copy is a fallback, not a default: use it for CTA holds, proof notes, or when the image subject already dominates the center.
+
 Every text-over-background beat must declare one compact layout contract:
 
 ```text
@@ -54,6 +56,17 @@ Default cinematic vertical films should start from a full-bleed stage, a center-
 - Text axis: lower-middle, but above the bottom platform overlay.
 - Quiet zone: dark lower third with local contrast treatment.
 - Avoid: CTA below the safe bottom boundary.
+- Caution: if the text is the hook or emotional center, do not automatically push it below the symbol. Either let the text dominate the center and move the symbol behind/around it, or choose a side-title / kinetic-type layout.
+
+### Center Impact Type
+
+- Use for hooks, manifesto lines, major emotional turns, and short claims where the words are the image.
+- Image ratio: 9:16 background stage, pure kinetic type, or low-detail generated plate.
+- Subject zone: type owns center 70% width, 28%-58% height; image subject must stay behind, above, below, or at low contrast.
+- Text axis: center axis or controlled split axis.
+- Quiet zone: center field protected by darkness, blur, mask, or negative space.
+- Motion: type reveal should have a clear text transition, such as mask open, scan highlight, compression release, split-line handoff, or word assembly.
+- Avoid: treating center type as a static title slide. The text itself must move with intent.
 
 ### Proof Cutaway Hold
 
@@ -147,6 +160,7 @@ Short-video viewers read in glances. Text density must let the main idea land in
 - Split axis: image and text occupy separate zones; do not let text float over the image edge.
 - Bottom axis: valid only when the safe bottom boundary is explicit and the title clears platform UI.
 - Axis consistency is a default, not a religion. Break it only when semantic hierarchy requires it, and document why.
+- For hooks, center axis is often the strongest choice because it owns first attention. If center axis feels weak, the problem is usually type scale, motion, contrast, or background detail, not the axis itself.
 
 Platform UI, subtitle, proof note, support line, and CTA are different semantic layers. Do not repeat the same text in two layers.
 
@@ -182,6 +196,8 @@ If the image returns with text in the quiet zone, a subject on the wrong side, o
 
 Before motion, inspect the readable hold frame. This is a gate, not the final goal:
 
+- Confirm the first eye target is obvious within one second.
+- Confirm hook text is not unnecessarily demoted to the lower half.
 - Snapshot the hero frame or inspect the static composition.
 - Confirm one dominant visual mass and one dominant text block.
 - Confirm `textRect`, `subjectRect`, and `safeBottomY` match the layout contract.

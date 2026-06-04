@@ -8,6 +8,8 @@ New videos need a background stage by default. It can be generated, supplied, or
 
 For text over or near background imagery, use `references/text-over-background-layout.md`. Choose a candidate layout strategy before image generation, then lock the final per-beat layout contract after generated or supplied imagery is inspected. The final contract owns image ratio, text rectangle, subject rectangle, quiet text zone, title tier, mobile safe zones, and motion bounds.
 
+For motion craft, use `references/motion-craft.md`. Static hero frames are necessary, but they are not enough. The finished piece must define where attention starts, how text moves, how scenes bridge, and which CSS/SVG/GSAP devices make it feel like motion rather than slides.
+
 New video work is two-phase: first produce a brief/design proposal and wait for user confirmation; only then produce images, HyperFrames source, snapshots, renders, and review artifacts.
 
 ## 1. Intake
@@ -63,6 +65,8 @@ Before any implementation, produce `BRIEF_DESIGN_PROPOSAL.md` or the equivalent 
 - Typography, layout, overflow handling, and mobile crop handling.
 - Motion plan and risk gates.
 - Background text layout plan: candidate layout strategy, likely text/subject relationship, title tier, mobile safe-zone risks, and regenerate/recrop trigger.
+- Attention map: first eye target, center-impact decision, and rationale for center/upper-center/side/lower-safe text.
+- Motion craft plan: camera behavior, kinetic typography, text transition style, SVG/CSS structure, GSAP timeline structure, signature motion moment, and anti-PPT risk.
 
 Stop here and ask for confirmation. Do not generate images or write composition code until the user confirms.
 
@@ -76,12 +80,14 @@ Define:
 - Accent color and whether any warm rim glow is allowed. Avoid colorful gradients by default.
 - Display and body typography.
 - Safe margins.
+- First eye target and center-impact policy for hook, central claim, proof, and CTA frames.
 - Layout grid or placement logic.
 - Background image system: role, crop, focal subject, quiet text zone, contrast treatment, and local asset path plan.
 - Background text layout system: default layout strategies, allowed final contract variants, image ratios, text rectangles, subject rectangles, title tiers, mobile safe zones, motion bounds, and regenerate/recrop triggers.
 - Text-over-image rules: where type may sit, how the image will be darkened/blurred/desaturated behind text, and what crop is forbidden.
 - Component patterns such as title card, product frame, proof stat, and CTA.
 - Motion personality and motion budget.
+- Motion craft system: camera movement, kinetic typography, text transitions, SVG/CSS layers, GSAP labels, and scene bridges.
 - Do and don't rules.
 - The central metaphor symbol and how it is lit.
 - Any generated image assets needed before HyperFrames composition.
@@ -117,11 +123,14 @@ Every beat should specify:
 
 - Start and end time.
 - Main message.
+- First eye target and whether the text should own center attention.
 - Hero frame timestamp.
 - Metaphor role.
 - Layout and hierarchy.
 - Layout contract, including textRect, subjectRect, safeBottomY, title tier, and motion bounds.
 - Motion.
+- Text transition: entry, readable lock, emphasis, exit, and bridge.
+- CSS/SVG/GSAP device used for motion structure.
 - Transition out.
 - Audio/rhythm note.
 - Quality risk.
@@ -211,6 +220,7 @@ Motion should:
 - Reinforce audio hits.
 - Transition between ideas.
 - Avoid decorative noise.
+- Make the work impossible to reduce to static screenshots without losing meaning.
 
 Motion budget:
 
@@ -220,6 +230,15 @@ Motion budget:
 - Main text should settle before it needs to be read.
 - Important reveals need a still hold, not continuous drift.
 - Scene transitions should overlap or share an anchor; do not cut through empty black unless the black frame is the point.
+
+Motion craft requirements:
+
+- Build a labeled GSAP master timeline for multi-scene work.
+- Use CSS3/SVG devices for structural reveals when appropriate: masks, clip paths, scan paths, underlines, frames, connectors, or perspective layers.
+- Give important text a real transition pattern, not only opacity and y-position.
+- Let hook or amplified keyword text occupy center or upper-center impact when it is the main subject.
+- Reserve lower-safe placement for CTA, proof notes, or subject-dominant frames.
+- Include at least one signature motion moment that belongs to the metaphor.
 
 ## 10. Validate
 

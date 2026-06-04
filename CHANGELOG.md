@@ -2,6 +2,32 @@
 
 All notable changes to this project will be documented in this file.
 
+## [2.3.0] - 2026-06-05
+
+### Added
+
+- Added `references/motion-craft.md` for anti-PPT motion direction, kinetic typography, CSS3 / SVG / GSAP scene bridges, and center-impact attention planning.
+- Added a visual-object discipline to `SKILL.md`, templates, and review gates so videos can use restrained props, marks, frames, stamps, rails, and texture pieces without drifting into icon decoration.
+- Added attention-map, first-eye-target, center-impact, kinetic typography, and anti-PPT fields across the brief, design, storyboard, motion map, and review templates.
+- Added eval coverage for PPT-like video criticism, lower-half hook placement, weak text transitions, CSS/SVG/GSAP motion planning, and anti-PPT review gates.
+
+### Changed
+
+- Reworked the skill flow from a three-layer model to a four-layer model: background, typography, visual objects, and motion.
+- Strengthened existing-video edit guidance for videos that feel static, low-impact, under-animated, or too much like slides.
+- Expanded artifact validation so generated projects must document stronger motion craft, attention placement, readable holds, and anti-PPT decisions.
+- Simplified README language for non-specialist readers while keeping the publishing and validation commands intact.
+- Ignored generated `productions/` folders so rendered video work does not enter the skill release.
+
+### Validation
+
+- Ran `node scripts/check-structure.mjs`.
+- Generated a temporary project scaffold with timing and motion templates.
+- Ran strict asset checks against the temporary scaffold.
+- Confirmed blank templates fail artifact completeness validation as expected until production fields are filled.
+- Ran `node scripts/build_review_pack.mjs` against the temporary scaffold.
+- Ran `git diff --check`.
+
 ## [2.2.0] - 2026-06-04
 
 ### Added
